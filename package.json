@@ -1,0 +1,46 @@
+{
+  "name": "crawlcove-sitemap-validator",
+  "version": "1.0.0",
+  "description": "XML sitemap validator CLI: fetch a sitemap or sitemap index, check it against the sitemaps.org protocol and Google's limits, flag bad URLs, lastmod dates and cross-host entries, exit non-zero in CI.",
+  "type": "module",
+  "bin": {
+    "sitemap-validator": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "seo",
+    "sitemap",
+    "xml-sitemap",
+    "sitemap-validator",
+    "sitemap-checker",
+    "cli",
+    "crawl-cove"
+  ],
+  "author": "Crawl Cove",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CrawlCove/crawlcove-sitemap-validator.git"
+  },
+  "homepage": "https://crawlcove.com/tools/xml-sitemap-checker?utm_source=github&utm_medium=crawlcove-sitemap-validator",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "fast-xml-parser": "^5.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.2"
+  }
+}
